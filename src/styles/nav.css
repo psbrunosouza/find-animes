@@ -1,0 +1,10 @@
+@media screen and (max-width: 620px) {
+  .navbar-brand{
+    font-size: 18px;
+  }
+
+  .menu-about{
+    font-size: 18px;
+  }
+
+}

@@ -2,6 +2,8 @@
   overflow-x: scroll;
 }
 
-.card-inline li{
-  
+@media screen and (min-width: 620px) {
+  .card-item{
+    margin-left: 3;
+  }
 }

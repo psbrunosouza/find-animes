@@ -29,21 +29,22 @@ function Home(){
 
   return (
     <section>
-      <div className="home">
+      <div className="home col-sm-12 d-flex justify-content-center 
+        align-items-center flex-column">
         <Link 
           to="/" 
-          className="mx-auto title text-dark">
+          className="text-center text-dark title">
           Find your new anime</Link>
-        <p className="text-dark subtitle">A powerful website to find 
+        <p className="text-center text-dark subtitle">A powerful website to find 
         a new anime to watch</p>
       </div>
 
-      <form className="form-inline justify-content-center mb-3" 
+      <form className="row form-inline justify-content-center mb-3" 
             onSubmit={handleSubmit}>
         <div className="column">
-          <div className="form-group row">
+          <div className="col-sm-12 form-group justify-content-center align-items-center">
             <input
-              className="form-control"
+              className="search-bar form-control col-sm-6 col-md-8"
               name="search"
               type="search"
               placeholder="type anime name..."
@@ -53,24 +54,24 @@ function Home(){
             
             <button
               type="submit"
-              className={`btn btn-danger ${isLoading ? 'spinner-border' : ''}`}
+              className={` search-btn btn btn-danger col-sm-6 col-md-4`}
               disabled={searched.length < minLength}
               role="status"
               aria-describedby="ruleOfThreeCharacters"
               >
               Search
             </button>
-          </div>
 
-          <div className=" form-group row">
-            <small id="ruleOfThreeCharacters" class={`${searched < minLength ? 'form-text text-muted text-danger' : 'd-none'}`}>
-              You must type a value with more than <br></br>three characters
-            </small>
+            <div className=" form-group col-sm-6 col-md-12 text-center">
+              <small id="ruleOfThreeCharacters" class={`${searched < minLength ? 'info form-text text-muted text-danger' : 'd-none'}`}>
+                You must type a value with more than <br></br>three characters
+              </small>
+            </div>
           </div>
         </div>
       </form>
 
-      <section>
+      <section className="col-sm-12 col-md-12">
         <CardList list={loadedList} isInline={false}/>
       </section>
     </section>

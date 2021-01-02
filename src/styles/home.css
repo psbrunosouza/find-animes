@@ -1,8 +1,4 @@
 .home{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 200px 0 15px 0;
 }
 
@@ -17,4 +13,28 @@
 
 .title:hover{
   color: rgb(48, 127, 245);
+}
+
+@media screen and (max-width: 620px) {
+  .home{
+    margin: 70px 0 15px 0;
+  }
+
+  
+  .title{
+    font-size: 32px;
+    font-family: 'Righteous', cursive;
+  }
+
+  .subtitle{
+    font-size: 20px;
+  }
+
+  .info{
+    font-size: 20px;
+  }
+
+  .search-bar{
+    margin-bottom: 15px;
+  }
 }

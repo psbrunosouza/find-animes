@@ -1,0 +1,6 @@
+@media screen and (max-width: 620px) {
+  .notFound img{
+    width: 320px;
+    height: 190px;
+  }
+}
