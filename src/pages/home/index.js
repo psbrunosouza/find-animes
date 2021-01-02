@@ -41,10 +41,10 @@ function Home(){
 
       <form className="row form-inline justify-content-center mb-3" 
             onSubmit={handleSubmit}>
-        <div className="column">
+        <div className="d-flex justify-content-center flex-column align-items-center">
           <div className="col-sm-12 form-group justify-content-center align-items-center">
             <input
-              className="search-bar form-control col-sm-6 col-md-8"
+              className="search-bar form-control col"
               name="search"
               type="search"
               placeholder="type anime name..."
@@ -54,20 +54,17 @@ function Home(){
             
             <button
               type="submit"
-              className={` search-btn btn btn-danger col-sm-6 col-md-4`}
+              className={` search-btn btn btn-danger col`}
               disabled={searched.length < minLength}
               role="status"
               aria-describedby="ruleOfThreeCharacters"
               >
               Search
             </button>
-
-            <div className=" form-group col-sm-6 col-md-12 text-center">
-              <small id="ruleOfThreeCharacters" class={`${searched < minLength ? 'info form-text text-muted text-danger' : 'd-none'}`}>
-                You must type a value with more than <br></br>three characters
-              </small>
-            </div>
           </div>
+          <small id="ruleOfThreeCharacters" class={`${searched < minLength ? 'info form-text text-muted text-danger' : 'd-none'}`}>
+              You must type a value with more than <br></br>three characters
+          </small>
         </div>
       </form>
 
