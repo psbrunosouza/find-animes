@@ -30,12 +30,12 @@ function Home(){
     setIsLoading(true);
 
     if(!isNsfw){
-      NsfwString = '&genre=12&genre_exclude=0';
+      NsfwString = '&genre=9,12,33,34,35&genre_exclude=0&order_by=members';
     }else{
-      NsfwString = '';
+      NsfwString = '&genre=12';
     }
-
-    const res = await api.get(`/search/anime?q=${searched}&limit=8&sort=desc&order_by=members${NsfwString}`);
+    
+    const res = await api.get(`/search/anime?q=${searched}&limit=16&sort=desc${NsfwString}`);
     setLoadedList(res.data.results);
     setIsLoading(false);
   }
@@ -96,7 +96,7 @@ function Home(){
       </div>
       
       <section>
-        <CardList list={loadedList} isInline={false}/>
+        <CardList list={loadedList} isInline={false} size={16}/>
       </section>  
     </section>
   );
