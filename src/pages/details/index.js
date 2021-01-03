@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import {useParams, useHistory, Link} from 'react-router-dom';
+import {useParams, useHistory} from 'react-router-dom';
 import api from '../../services/api';
 import Player from 'react-player/lazy';
 import CardList from '../../components/card-list';
 import Swal from 'sweetalert2';
 import '../../styles/details.css';
-
 
 function Details(){
   
@@ -23,7 +22,7 @@ function Details(){
         const resAnime = await api.get(`/anime/${id}`);
         setAnime(resAnime.data);
         setGenres(resAnime.data.genres);
-  
+
         const resRecommendations = await api.get(`/anime/${id}/recommendations`);
         setRecommedations(resRecommendations.data.recommendations)
   
@@ -44,7 +43,7 @@ function Details(){
   return (
     <section className="section">
       <header className="row justify-content-center">
-        <div className="col-md-3 col-sm-5">
+        <div className="details-image mb-3 col-md-3 col-sm-12">
           <img src={anime.image_url} alt={anime.title}/>
         </div>
         <div className="col">
@@ -72,7 +71,7 @@ function Details(){
             </p>
           </section>
 
-          <section className="d-flex justify-content-center mb-5">
+          <section className="d-flex justify-content-center mb-4">
             <Player url={anime.trailer_url} controls/>
           </section>
         </div>
@@ -80,10 +79,9 @@ function Details(){
 
       
       
-      <section>
-
+      <section className={`${recommendations.length <= 0 ? 'd-none' : 'd-block'}`}>
         <ul>
-          <CardList list={recommendations} isInline={true}/>
+          <CardList list={recommendations} isInline={true} size={6}/>
         </ul>
       </section>
 

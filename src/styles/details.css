@@ -14,3 +14,10 @@
 .anime-genre-title{
   font-size: 20;
 }
+
+@media screen and (max-width: 620px) {
+  .details-image{
+    display: flex;
+    justify-content:center;
+  }
+}
