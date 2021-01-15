@@ -1,7 +1,4 @@
 # Find your new anime
-
-
-
 ## Descrição
 Projeto desenvolvido com objetivo de apliar o aprendizado sobre REACTJS e uso de suas tecnologias, assim como evoluir por meio da utilização de API's, entendendo o seu funcionamento, por meio de documentação. Esse projeto tem por objetivo realizar consultas na API JIKAN que busca conteúdo de animes e mangás, com minha interface, o usuário pode encontrar o anime que desejar e obter um detalhamento completo sobre sua história, personagens, genero, trailer e muito mais.
 Esse conteúdo foi possível graças a <a href="https://github.com/mrocha98">@mrocha98</a>, que disponibilizou todo conteúdo explicativo em seu site, muito obrigado.
