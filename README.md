@@ -23,3 +23,7 @@ Ao clicar em 'details', o usuário será encaminhado a uma página que irá exib
 
 
 ## Tecnologias
+- REACTJS
+- JIKAN
+- AXIOS
+- REACT-ROUTER-DOM
