@@ -26,7 +26,7 @@ Ao clicar em 'details', o usuário será encaminhado a uma página que irá exib
 
 
 ## Tecnologias
-- https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB REACTJS 
-- JIKAN
-- AXIOS
-- REACT-ROUTER-DOM
+[![Generic badge](https://img.shields.io/badge/REACT-29BA9E.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/JIKAN-29BA9E.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/AXIOS-29BA9E.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/REACT_ROUTER_DOM-29BA9E.svg)](https://shields.io/)
